@@ -4,4 +4,21 @@
     <string name="home">Home</string>
     <string name="search">Search</string>
     <string name="profile">Profile</string>
+    <string name="where">Where?</string>
+    <string name="boat">Boat</string>
+    <string name="car">Car</string>
+    <string name="plane">Plane</string>
+    <string name="hotel">Hotel</string>
+    <string name="most_popular_now">Most popular now</string>
+    <string name="more_offers">More offers</string>
+    <string name="unique_places">Unique places</string>
+    <string name="price_per_night">$%1$d price per night</string>
+    <string name="hotel_location">%1$s, %2$s</string>
+    <string name="most_popular_hotel_date_info">%1$d nights - %2$s, %3$s</string>
+    <string name="reviews">%1$d (%2$d reviews)</string>
+    <string name="recommended_hotels">Rec\u00ADo\u00ADm\u00ADm\u00ADe\u00ADn\u00ADd\u00ADe\u00ADd hotels</string>
+    <string name="dream_places_to_visit">Dream places to visit</string>
+
+    <!-- Content Descriptions -->
+    <string name="most_popular_hotel_photo_on_home_screen">most popular hotel photo on home screen</string>
 </resources>

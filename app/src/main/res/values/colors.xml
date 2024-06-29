@@ -3,4 +3,9 @@
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
     <color name="app_icon_background">#4FA0FF</color>
+
+    <color name="background">#F1F2F4</color>
+    <color name="surface">#F1F2F4</color>
+    <color name="surfaceContainer">#EFEFEF</color>
+    <color name="secondaryContainer">#E3E3E3</color>
 </resources>

@@ -34,9 +34,9 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun setupBottomNavigationView(savedInstanceState: Bundle?) {
-        // Initial fragment
+        // Add the initial fragment only if the activity is not being recreated
         if (savedInstanceState == null) {
-            // Add the initial fragment only if the activity is not being recreated
+            // Initial fragment
             supportFragmentManager
                 .beginTransaction()
                 .replace(R.id.fragmentContainer, HomeFragment())
