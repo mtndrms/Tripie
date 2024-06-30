@@ -1,9 +1,10 @@
 package com.example.tripie.data.mock
 
-import com.example.tripie.data.mock.model.Hotel
-import com.example.tripie.data.mock.model.Review
+import com.example.tripie.data.mock.response.ResponseMostPopularHotel
+import com.example.tripie.data.model.Hotel
+import com.example.tripie.data.model.Review
 
-object MockData {
+object MockHotelData {
     val hotel = Hotel(
         name = "Hotel Dark Diamond",
         country = "Switzerland",
@@ -38,5 +39,5 @@ object MockData {
         )
     )
 
-    val mostPopularHotel = MostPopularHotel(hotel = hotel)
+    val mostPopularHotel = ResponseMostPopularHotel(hotel = hotel)
 }

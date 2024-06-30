@@ -1,4 +1,4 @@
-package com.example.tripie.data.mock.model
+package com.example.tripie.data.model
 
 data class Hotel(
     val name: String,

@@ -19,8 +19,9 @@ class MainActivity : AppCompatActivity() {
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
+        setupInitialFragment(savedInstanceState)
         setupWindowInsets()
-        setupBottomNavigationView(savedInstanceState)
+        setupBottomNavigationView()
     }
 
     private fun setupWindowInsets() {
@@ -33,24 +34,26 @@ class MainActivity : AppCompatActivity() {
         }
     }
 
-    private fun setupBottomNavigationView(savedInstanceState: Bundle?) {
+    private fun setupInitialFragment(savedInstanceState: Bundle?) {
         // Add the initial fragment only if the activity is not being recreated
         if (savedInstanceState == null) {
             // Initial fragment
             supportFragmentManager
                 .beginTransaction()
-                .replace(R.id.fragmentContainer, HomeFragment())
+                .replace(R.id.fcvAppHost, HomeFragment.newInstance())
                 .commit()
         }
+    }
 
-        // Top level destinations for bottomn navigation view
+    private fun setupBottomNavigationView() {
+        // Top level destinations for bottom navigation view
         binding.bnvBottomNavigationView.setOnItemSelectedListener { item ->
             when (item.itemId) {
                 R.id.home -> {
-                    val fragment = HomeFragment()
+                    val fragment = HomeFragment.newInstance()
                     supportFragmentManager
                         .beginTransaction()
-                        .replace(R.id.fragmentContainer, fragment)
+                        .replace(R.id.fcvAppHost, fragment)
                         .addToBackStack("HomeFragment")
                         .commit()
 
@@ -58,10 +61,10 @@ class MainActivity : AppCompatActivity() {
                 }
 
                 R.id.search -> {
-                    val fragment = SearchFragment()
+                    val fragment = SearchFragment.newInstance()
                     supportFragmentManager
                         .beginTransaction()
-                        .replace(R.id.fragmentContainer, fragment)
+                        .replace(R.id.fcvAppHost, fragment)
                         .addToBackStack("SearchFragment")
                         .commit()
 
@@ -69,10 +72,10 @@ class MainActivity : AppCompatActivity() {
                 }
 
                 R.id.profile -> {
-                    val fragment = ProfileFragment()
+                    val fragment = ProfileFragment.newInstance()
                     supportFragmentManager
                         .beginTransaction()
-                        .replace(R.id.fragmentContainer, fragment)
+                        .replace(R.id.fcvAppHost, fragment)
                         .addToBackStack("ProfileFragment")
                         .commit()
 

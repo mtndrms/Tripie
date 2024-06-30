@@ -1,9 +1,9 @@
-package com.example.tripie.data.mock
+package com.example.tripie.data.mock.response
 
 import com.example.tripie.common.Month
-import com.example.tripie.data.mock.model.Hotel
+import com.example.tripie.data.model.Hotel
 
-data class MostPopularHotel(
+data class ResponseMostPopularHotel(
     val hotel: Hotel,
 ) {
     val nights: Int = (1..14).random()

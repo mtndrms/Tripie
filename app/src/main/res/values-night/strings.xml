@@ -12,12 +12,27 @@
     <string name="most_popular_now">Most popular now</string>
     <string name="more_offers">More offers</string>
     <string name="unique_places">Unique places</string>
-    <string name="price_per_night">$%1$d price per night</string>
+    <string name="price_per_night">$%1$d per night</string>
     <string name="hotel_location">%1$s, %2$s</string>
     <string name="most_popular_hotel_date_info">%1$d nights - %2$s, %3$s</string>
     <string name="reviews">%1$d (%2$d reviews)</string>
     <string name="recommended_hotels">Rec\u00ADo\u00ADm\u00ADm\u00ADe\u00ADn\u00ADd\u00ADe\u00ADd hotels</string>
     <string name="dream_places_to_visit">Dream places to visit</string>
+    <string name="bus">Bus</string>
+    <string name="best_deal">Best deal</string>
+    <string name="to">To</string>
+    <string name="from">From</string>
+    <string name="buy_now">Buy now</string>
+    <string name="explore_the_world">Explore the world</string>
+    <string name="upcoming_flights">Upcoming flights</string>
+    <string name="see_all">See all</string>
+    <string name="date">Date</string>
+    <string name="flight_time">%1$dh</string>
+    <string name="flight_arrival_location">%1$s, %2$s</string>
+    <string name="best_deal_flight_date">%1$s - %2$s</string>
+    <string name="price_per_passenger">$%1$d per passenger</string>
+    <string name="flight_departure_and_arrival_date">%1$s, %2$s</string>
+    <string name="upcoming">Upcoming</string>
 
     <!-- Content Descriptions -->
     <string name="most_popular_hotel_photo_on_home_screen">most popular hotel photo on home screen</string>
