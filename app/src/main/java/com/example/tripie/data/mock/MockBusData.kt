@@ -59,7 +59,7 @@ object MockBusData {
             arrivalTime = "06:00"
         ),
         Trip(
-            from = "Johannesburg",
+            from = "Manchester",
             to = "London",
             tripLengthInHours = 11,
             departureDate = "Jun 30",
@@ -96,5 +96,5 @@ object MockBusData {
         )
     )
 
-    val upcomingBusTrip = busRoutes.first()
+    val upcomingBusTrip = busRoutes[6]
 }

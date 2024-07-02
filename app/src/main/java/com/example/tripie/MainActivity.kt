@@ -40,7 +40,7 @@ class MainActivity : AppCompatActivity() {
             // Initial fragment
             supportFragmentManager
                 .beginTransaction()
-                .replace(R.id.fcvAppHost, HomeFragment.newInstance())
+                .replace(R.id.fcvAppHost, SearchFragment.newInstance())
                 .commit()
         }
     }
